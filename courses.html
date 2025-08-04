@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  <title>Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background-color: white;
+      padding: 20px;
+      border-left: 5px solid #2980b9;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: #ddd;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <h1>My Courses</h1>
+    <p>Explore what I'm learning!</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Student Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="course-grid">
+      <div class="course-card">
+        <h3>JavaScript Basics</h3>
+        <p>Understand variables, data types, operators, loops, functions, and conditions. Ideal for beginners.</p>
+      </div>
+      <div class="course-card">
+        <h3>HTML & CSS Foundations</h3>
+        <p>Learn how to build and style websites using modern HTML5 and CSS3 techniques.</p>
+      </div>
+      <div class="course-card">
+        <h3>Responsive Web Design</h3>
+        <p>Make websites that look great on all devices using media queries and flexible layouts.</p>
+      </div>
+      <div class="course-card">
+        <h3>JavaScript DOM Manipulation</h3>
+        <p>Interact with web pages dynamically using the Document Object Model (DOM) and events.</p>
+      </div>
+      <div class="course-card">
+        <h3>Web Development Project</h3>
+        <p>Apply what you've learned by building a real project like a reading log, to-do app, or mini website.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 My Learning Journal. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CodeWeekend Bootcamp</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Student Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile">
+    <h2>Student Profile</h2>
+    <img src="images/prof1.jpg" alt="Marzia's Photo" class="profile-pic" />
+
+    <div class="info">
+      <p><strong>Name:</strong> Marzia Afzali</p>
+      <p><strong>Age:</strong> 20</p>
+      <p><strong>Grade:</strong>third-year student(s) of Uni</p>
+    </div>
+
+    <div id="contact-info" class="hidden">
+      <p><strong>Email:</strong> Afzalimarzia2004@gmail.com</p>
+      <p><strong>Phone:</strong> 0712345678</p>
+    </div>
+
+    <div class="buttons">
+      <button id="show-email">Show Email</button>
+      <button id="show-phone">Show Phone</button>
+      <button id="hide-contact">Hide Contact Info</button>
+    </div>
+
+    <div class="status-section">
+      <h3>Status: <span id="status">Active</span></h3>
+      <input type="text" id="status-input" placeholder="Enter new status (Active/Suspended)" />
+      <button id="update-status">Update Status</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 My Learning Journal. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
